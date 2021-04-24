@@ -1,0 +1,35 @@
+/*
+   Buttons
+ */
+
+button{
+   border: unset;
+   &[disabled='disabled']{
+      opacity: .5;
+   }
+}
+
+.btn{
+   font-family: $fontHeaders;
+   display: inline-block;
+   font-size: 16px;
+   letter-spacing: 0.04em;
+   padding: 6px 12px 5px;
+   transition: all .3s ease-in-out;
+   white-space: nowrap;
+}
+
+.btn-maincolor{
+   background-color: $colorMain;
+   color: $lightColor;
+   &:hover:not([disabled='disabled']){
+      background-color: $colorMain2;
+   }
+}
+.btn-maincolor2{
+   background-color: $colorMain2;
+   color: $lightColor;
+   &:hover:not([disabled='disabled']){
+      background-color: $colorMain;
+   }
+}
